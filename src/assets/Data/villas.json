@@ -1,0 +1,71 @@
+[
+    {
+        "villaTypeName": "villa 1",
+        "yearlyPrice": 1200,
+        "villaTypeID": "01",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "villaTypeName": "villa 2",
+        "yearlyPrice": 4582,
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "villaTypeName": "villa 3",
+        "yearlyPrice": 4572,
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "villaTypeName": "villa 4",
+        "yearlyPrice": 1235,
+        "villaTypeID": "04",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "villaTypeName": "villa 5",
+        "yearlyPrice": 4587,
+        "villaTypeID": "05",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "villaTypeName": "villa 6",
+        "yearlyPrice": 1242,
+        "villaTypeID": "06",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "villaTypeName": "villa 7",
+        "yearlyPrice": 1587,
+        "villaTypeID": "07",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    }
+]

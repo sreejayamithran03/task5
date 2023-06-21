@@ -1,0 +1,86 @@
+[
+    {
+        "tournamentName": "tournament 1",
+        "tournamentFee": "120AED",
+        "tournamentId": "01",
+        "startDate": "2023-02-02T07:55:32Z",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "tournamentName": "tournament 2",
+        "tournamentFee": "120AED",
+        "tournamentId": "02",
+        "startDate": "2023-02-02T07:55:32Z",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "tournamentName": "tournament 3",
+        "tournamentFee": "120AED",
+        "tournamentId": "03",
+        "startDate": "2023-02-02T07:55:32Z",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "tournamentName": "tournament 4",
+        "tournamentFee": "120AED",
+        "tournamentId": "04",
+        "startDate": "2023-02-02T07:55:32Z",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "tournamentName": "tournament 5",
+        "tournamentFee": "120AED",
+        "tournamentId": "05",
+        "startDate": "2023-02-02T07:55:32Z",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "tournamentName": "tournament 6",
+        "tournamentFee": "120AED",
+        "tournamentId": "06",
+        "startDate": "2023-02-02T07:55:32Z",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "tournamentName": "tournament 7",
+        "tournamentFee": "120AED",
+        "tournamentId": "07",
+        "startDate": "2023-02-02T07:55:32Z",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": null,
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    }
+]

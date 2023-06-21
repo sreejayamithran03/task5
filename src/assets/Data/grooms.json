@@ -1,0 +1,71 @@
+[
+    {
+        "groomsaccomadation": "accomadation 1",
+        "price": 1200,
+        "apatmentTypeId": "01",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "groomsaccomadation": "accomadation 2",
+        "price": 2000,
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "groomsaccomadation": "accomadation 3",
+        "price": 1300,
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "groomsaccomadation": "accomadation 4",
+        "price": 1100,
+        "apatmentTypeId": "04",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "groomsaccomadation": "accomadation 5",
+        "price": 1000,
+        "apatmentTypeId": "05",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "groomsaccomadation": "accomadation 6",
+        "price": 1000,
+        "apatmentTypeId": "06",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "groomsaccomadation": "accomadation 7",
+        "price": 1200,
+        "apatmentTypeId": "07",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    }
+]

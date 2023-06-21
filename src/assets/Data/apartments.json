@@ -1,0 +1,71 @@
+[
+    {
+        "apartmentTypeName": "apartment 1",
+        "monthlyPrce": 120,
+        "apatmentTypeId": "01",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "apartmentTypeName": "apartment 2",
+        "monthlyPrce": 20,
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "apartmentTypeName": "apartment 3",
+        "monthlyPrce": 130,
+        "IsVisible": false,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "apartmentTypeName": "apartment 4",
+        "monthlyPrce": 110,
+        "apatmentTypeId": "04",
+        "endDate": "2023-02-02T07:55:32Z",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "apartmentTypeName": "apartment 5",
+        "monthlyPrce": 10,
+        "apatmentTypeId": "05",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "apartmentTypeName": "apartment 6",
+        "monthlyPrce": 10,
+        "apatmentTypeId": "06",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    },
+    {
+        "apartmentTypeName": "apartment 7",
+        "monthlyPrce": 12,
+        "apatmentTypeId": "07",
+        "IsVisible": true,
+        "IsActive": true,
+        "CreatedBy": "ismail",
+        "CreatedOn": "2023-02-02T07:55:32Z",
+        "LastUpdatedBy": "LastUpdatedBy"
+    }
+]

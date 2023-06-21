@@ -1,0 +1,337 @@
+<div class="container">
+  <h4>Tournament Accomodation</h4>
+  <form [formGroup]="tournamentsform" (ngSubmit)="submit()">
+    <div class="first">
+      <h6>Select Tournament *</h6>
+      <div class="check">
+        <div class="form-check" *ngFor="let tournament of tournaments">
+          <input class="form-check-input" type="checkbox" [value]="tournament.tournamentId"
+            [id]="'flexCheck' + tournament.tournamentId"
+            (change)="onCheckboxChange(tournament.tournamentId,tournament)">
+          <label class="form-check-label" [for]="'flexCheck' + tournament.tournamentId">
+            {{ tournament.tournamentName }} ({{ tournament.startDate }} to {{ tournament.endDate }}) - Fee: {{
+            tournament.tournamentFee }}
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="second">
+      <div class="team">
+        <div class="mb-3">
+          <label class="form-label">Team name *</label>
+          <input type="text" id="teamname" class="form-control" formControlName="teamname">
+        </div>
+        <div *ngIf="teamname?.touched">
+          <span *ngIf="teamname?.errors?.['required']">Please enter team name</span>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Country *</label>
+          <select formControlName="country" class="form-control">
+            <option value='United Arab Emirates'>United Arab Emirates</option>
+            <option value='United Kingdom'>United Kingdom</option>
+            <option value='United States'>United States</option>
+            <option value='India'>India</option>
+            <option value='Indonesia'>Indonesia</option>
+            <option value='Argentina'>Argentina</option>
+          </select>
+        </div>
+        <div *ngIf="country?.touched">
+          <span *ngIf="country?.errors?.['required']">Please enter Country</span>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email address *</label>
+          <input type="email" class="form-control" formControlName="email" aria-describedby="emailHelp">
+        </div>
+        <div *ngIf="email?.touched">
+          <span *ngIf="email?.errors?.['required']">Please enter email</span>
+        </div>
+      </div>
+      <div class="teams">
+        <div class="mb-3">
+          <label class="form-label">Team Manager *</label>
+          <input type="text" id="teammanager" class="form-control" formControlName="teammanager">
+        </div>
+        <div *ngIf="teammanager?.touched">
+          <span *ngIf="teammanager?.errors?.['required']">Please enter team manager</span>
+        </div>
+        <label class="form-label">Phone *</label>
+        <div class="phn">
+          <div class="mb-3">
+            <select class="form-select" formControlName="phone" style="width:250px;">
+              <option value="971">United Arab Emirates +971</option>
+              <option value="44">United Kingdom +44</option>
+              <option value="1">United States +1</option>
+              <option value="91">India +91</option>
+              <option value="62">Indonesia +62</option>
+              <option value="54">Argentina +54</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="number" name="phntyp" formControlName="phone" class="form-control" style="width: 300px;">
+          </div>
+        </div>
+        <div *ngIf="phone?.touched">
+          <span *ngIf="phone?.errors?.['required']">Please enter phone number</span>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">No of persons</label>
+          <input type="number" formControlName="noofpersons" id="noofpersons" class="form-control" style="width:80px;">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="third">
+      <h6>Aparartment (All prices are in AED)</h6>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+            <th scope="col">From Date</th>
+            <th scope="col">To Date</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let apartment of apartmentData ;let i = index">
+            <td>{{ apartment.apartmentTypeName }}</td>
+            <td><input type="text" #qty></td>
+            <td>{{ apartment.monthlyPrce }}</td>
+            <td><input type="date" #fdate></td>
+            <td><input type="date" #todate (change)="total(qty.value,apartment,fdate.value,todate.value,tp)"></td>
+            <td><input type="text" #tp id="i"></td>
+          </tr>
+        </tbody>
+        <div class="subtotal">
+          <div class="mb-3">
+            <label class="form-label">Sub Total</label>
+            <input type="text" name="sub" id="sub" class="form-control" [value]="subtotal" style="width: 60px;"
+              readonly>
+          </div>
+        </div>
+      </table>
+    </div>
+
+
+    <div class="third">
+      <h6>grooms (All prices are in AED)</h6>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+            <th scope="col">From Date</th>
+            <th scope="col">To Date</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let grooms of  groomsData; let i = index">
+            <td>{{ grooms.groomsaccomadation }}</td>
+            <td><input type="text" #quty></td>
+            <td>{{ grooms.price }}</td>
+            <td><input type="date" #frdate></td>
+            <td><input type="date" #tdate (change)="totals( quty.value, grooms,frdate.value,tdate.value,totalprice)">
+            </td>
+            <td><input type="text" #totalprice id="in"> </td>
+
+          </tr>
+        </tbody>
+        <div class="subtotal">
+          <div class="mb-3">
+            <label class="form-label">Sub Total</label>
+            <input type="text" name="subs" id="subs" class="form-control" style="width: 60px;" [value]="subtotals"
+              readonly>
+          </div>
+        </div>
+      </table>
+    </div>
+
+
+    <div class="third">
+      <h6>Villas (All prices are in AED)</h6>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+            <th scope="col">From Date</th>
+            <th scope="col">To Date</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vilas of vilasData  let i = index;">
+            <td>{{ vilas.villaTypeName }}</td>
+            <td><input type="text" #quantity></td>
+            <td>{{ vilas.yearlyPrice }}</td>
+            <td><input type="date" #frmdate></td>
+            <td><input type="date" #tosdate
+                (change)="totalss( quantity.value,vilas ,frmdate.value,tosdate.value,tprice)"></td>
+            <td><input type="text" #tprice id="ind"> </td>
+          </tr>
+        </tbody>
+        <div class="subtotal">
+          <div class="mb-3">
+            <label class="form-label">Sub Total</label>
+            <input type="text" name="subss" id="subss" class="form-control" [value]="subtotalss" style="width: 60px;"
+              readonly>
+          </div>
+        </div>
+      </table>
+    </div>
+
+    <div>
+      <div class="mb-3">
+        <label class="form-label">Grand Total( AED):</label>
+        <input type="text" id="grand" class="form-control" [value]="grand" readonly>
+      </div>
+      <p>* marked fields are mandatory</p>
+    </div>
+    <div class="fourth">
+      <button type="reset" class="btn btn-dark" (click)="reset()">RESET</button>
+      <button type="submit" class="btn btn-secondary">SUBMIT</button>
+    </div>
+  </form>
+</div>
+
+
+<div class="fifth">
+  <div>
+    <h5>Team managment</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Team Name</th>
+          <th scope="col">Team manager</th>
+          <th scope="col"> Country</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col"> Email</th>
+          <th scope="col">No of person</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of tournamentlist">
+          <td><span>{{item.teamname}}</span> </td>
+          <td><span>{{item.teammanager}}</span></td>
+          <td><span>{{item.country}}</span></td>
+          <td><span>{{item.phone}}</span></td>
+          <td><span>{{item.email}}</span></td>
+          <td><span>{{item.noofpersons}}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="fifth">
+    <h5>Tournament table</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Tournament Name</th>
+          <th scope="col">Start Date</th>
+          <th scope="col">End Date</th>
+          <th scope="col">Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tournment of seltournamentsub">
+          <td>{{ tournment.tournamentName }}</td>
+          <td>{{ tournment.startDate}}</td>
+          <td>{{ tournment.endDate }}</td>
+          <td>{{ tournment.tournamentFee}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="fifth">
+    <h5>Apartments Table</h5>
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col"> qty</th>
+            <th scope="col">Monthly Price</th>
+            <th scope="col">From Date</th>
+            <th scope="col">To Date</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of appartmentarray ">
+            <td><span>{{item.apartmentTypeName}}</span> </td>
+            <td><span>{{item.qty}}</span></td>
+            <td><span>{{item.monthlyPrce}}</span></td>
+            <td><span>{{item.fdate}}</span></td>
+            <td><span>{{item.tdate}}</span></td>
+            <td><span>{{item.totalPrice}}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="fifth">
+      <h5>Grooms Table</h5>
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col"> qty</th>
+              <th scope="col">Monthly Price</th>
+              <th scope="col">From Date</th>
+              <th scope="col">To Date</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of groomarray">
+              <td><span>{{item.groomsaccomadation}}</span> </td>
+              <td><span>{{item.quty}}</span></td>
+              <td><span>{{item.price}}</span></td>
+              <td><span>{{item.frdate}}</span></td>
+              <td><span>{{item.tdate}}</span></td>
+              <td><span>{{item.totalPrice}}</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="fifth">
+        <h5>Villas Table</h5>
+        <div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col"> qty</th>
+                <th scope="col">Monthly Price</th>
+                <th scope="col">From Date</th>
+                <th scope="col">To Date</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of villasarray">
+                <td><span>{{item.villaTypeName}}</span> </td>
+                <td><span>{{item.quantity}}</span></td>
+                <td><span>{{item.yearlyPrice}}</span></td>
+                <td><span>{{item.frmdate}}</span></td>
+                <td><span>{{item.tosdate}}</span></td>
+                <td><span>{{item.totalPrice}}</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>

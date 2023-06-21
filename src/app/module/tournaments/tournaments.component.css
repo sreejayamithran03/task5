@@ -1,0 +1,48 @@
+.first {
+    display: flex;
+    border:1px solid rgb(233, 227, 227);
+   
+}
+.check{
+    padding-left: 30px;
+}
+.form-check-input{
+  border: 2px solid maroon;
+}
+.second{
+    margin-top: 20px;
+    display: flex;
+    border:1px solid rgb(233, 227, 227);
+}
+.team{
+    padding-left: 10px;
+    width: 50%;
+}
+.teams{
+    padding-left: 30px;
+    width: 50%;
+}
+.third{
+    border:1px solid rgb(233, 227, 227);
+    margin-top: 20px;
+}
+.fourth{
+    margin-left: 500px;
+}
+.phn{
+    display: flex;
+   
+}
+/* .subtotal{
+    padding-left: 700px;
+} */
+.fifth{
+    border:1px solid rgb(233, 227, 227);
+    margin-top: 50px;
+   
+}
+
+
+
+
+
